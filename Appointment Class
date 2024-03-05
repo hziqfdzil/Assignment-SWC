@@ -1,0 +1,83 @@
+public class Appointment
+{
+    private String patientName;
+    private String dentistName;
+    private String apptDate; 
+    private String apptTime;
+    //Constructor without parameter   
+ public Appointment()
+    { 
+        patientName = null;
+        dentistName = null;
+        apptDate= null;
+        apptTime = null;
+    }
+    
+     //Constructor with parameter 
+    public Appointment (String patientName , String dentistName, String apptDate, String apptTime)
+    {
+        this.patientName = patientName;
+        this.dentistName = dentistName;
+        this.apptDate = apptDate;
+        this.apptTime = apptTime;
+    }
+    
+     //Accessor
+    public String getPatientName()
+    {
+        return patientName;
+    }
+    
+    public String getDentistName()
+    {
+        return dentistName;
+    }
+    
+    public String getApptDate()
+    {
+        return apptDate;
+    }
+    
+    public String getApptTime()
+    {
+        return apptTime;
+    }
+    
+    //Mutator    
+    public void setAppointment (String patientName , String dentistName, String apptDate, String apptTime)
+    {
+        this.patientName = patientName;
+        this.dentistName = dentistName;
+        this.apptDate = apptDate;
+        this.apptTime = apptTime;
+    }
+    
+    public void setPatientName ( String patientName ) 
+    {
+        this.patientName = patientName;
+    }
+    
+    public void setDentistName (String DentistName)
+    {
+        this.dentistName = dentistName;
+    }
+    
+    public void setApptDate (String apptDate )
+    { 
+        this.apptDate = apptDate;
+    }
+    
+     public void setApptTime (String apptTime )
+    { 
+        this.apptTime = apptTime;
+    }
+    
+    //toString 
+    public String toString ()
+    {
+        return ("Patient Name = " + patientName + 
+                "\nDentist Name = " + dentistName + 
+                "\nAppt Date = " + apptDate + 
+                "\nAppt Time = " + apptTime );
+    }//end of toString 
+}//end of class
