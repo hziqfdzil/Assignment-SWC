@@ -1,0 +1,21 @@
+public class BookingSystem
+{
+    public static void main(String[] args) {
+        // Create an array of Appointment objects with a size of 20
+        Appointment[] appointmentSchedule = new Appointment[20];
+
+        // Initialize some sample appointments 
+        appointmentSchedule[0] = new Appointment("Haziq"," Sara ","2024-03-05", "10:00 AM");
+        appointmentSchedule[1] = new Appointment("Alia Balqis"," Dini " , "2024-03-15", "11:30 AM");
+        appointmentSchedule[2] = new Appointment("Hazmi"," Aisyah " , "2024-03-25", "11:00 AM");
+        // ... (add more appointments)
+
+        // Display the appointment schedule
+        System.out.println("Dental Appointment Schedule:");
+        for (int i = 0; i < appointmentSchedule.length; i++) {
+            if (appointmentSchedule[i] != null) {
+                System.out.println("Appointment " + (i + 1) + ": " + appointmentSchedule[i]);
+            }
+        }
+    }
+}
